@@ -1,23 +1,26 @@
 <div id="post-comments"
     class="post-comments js-comments u-hide u-bgColorGrayLight u-paddingTop30 u-paddingBottom30 u-contentTitle">
     <div class="u-container u-maxWidth1000 u-card">
-        {{!-- Discourse Comments --}}
-        <div id='discourse-comments'></div>
+        {{!-- Joint Comments --}}
+        <script>
+            var jv_comments_config = {
+                website_id: 344,
+                is_open: 'true',
+                position: 'right'
+            };
+
+            (function () {
+                var d = document, s = d.createElement("script");
+                s.src = "https://widget.jointcomments.com/e/embed.prod.js";
+                if (/MSIE|Trident/.test(window.navigator.userAgent)) {
+                    s.src = "https://widget.jointcomments.com/e/embed.prodIE.js";
+                }
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
 
     </div>
 </div>
 
 {{#contentFor "scripts"}}
-<script type="text/javascript">
-    DiscourseEmbed = {
-        discourseUrl: 'https://forum.forgenst.com/',
-        discourseEmbedUrl: '{{url absolute="true"}}'
-    };
-
-    (function () {
-        var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
-        d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
-    })();
-</script>
 {{/contentFor}}
