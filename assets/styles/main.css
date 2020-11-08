@@ -2845,6 +2845,7 @@ body.is-transparent:not(.has-menu) .u-menu-color a {
 }
 
 .homeHero {
+  padding: 50px;
   margin-bottom: 50px
 }
 
