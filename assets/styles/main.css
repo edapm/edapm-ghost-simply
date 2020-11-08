@@ -2869,6 +2869,7 @@ body.is-transparent:not(.has-menu) .u-menu-color a {
   align-items: stretch;
   width: 100%;
   max-width: 1232px;
+  padding: 50px;
 }
 
 .homeHero-container .hh-author {
@@ -3684,8 +3685,6 @@ html[data-theme="dark"] table tr:nth-child(2n) {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     flex-direction: column;
-    padding: 50px;
-    margin: 25px;
   }
 
   .homeHero-largeCard {
