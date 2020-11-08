@@ -1438,7 +1438,7 @@ p {
 }
 
 .subscribeBanner {
-  padding: 20px 0;
+  padding: 20px;
   background: #f0fcf5;
   border-bottom: 1px solid rgba(0, 0, 0, .1)
 }
@@ -2845,7 +2845,6 @@ body.is-transparent:not(.has-menu) .u-menu-color a {
 }
 
 .homeHero {
-  padding: 50px;
   margin-bottom: 50px
 }
 
